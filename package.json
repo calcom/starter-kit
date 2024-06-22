@@ -1,0 +1,10 @@
+{
+  "name": "@calcom/starter-kit",
+  "version": "0.0.1",
+  "description": "Cal.com Starter Kit ",
+  "bin": "cli.js",
+  "repository": "git@github.com:calcom/starter-kit.git",
+  "author": "Cal.com Inc.",
+  "license": "MIT",
+  "private": false
+}
