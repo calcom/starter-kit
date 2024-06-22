@@ -60,11 +60,11 @@ function extractTarFile({ filePath, extractTo, dirNameToExtract }) {
 async function main() {
   const args = process.argv.slice(2);
 
-  if (args.length < 1 || args[0] !== "my-platform") {
-    console.error("Usage: cli.js my-platform [platform-directory-name]");
+  if (args.length != 1) {
+    console.error("Usage: cli.js [platform-directory-name]");
     process.exit(1);
   }
-  const userPlatformDirectoryName = args[1] || DEFAULT_PLATFORM_DIRECTORY_NAME;
+  const userPlatformDirectoryName = args[0] || DEFAULT_PLATFORM_DIRECTORY_NAME;
   const url =
     "https://github.com/calcom/platform-starter-kit/archive/refs/heads/main.tar.gz";
   const tarPath = "./platform-starter-kit-main.tar.gz";
